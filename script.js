@@ -50,6 +50,8 @@ function changeTrack(genre) {
     const player = document.getElementById('spotify-player');
     const yearText = document.querySelector('.year');
 
+    const playerContainer = document.getElementById('spotify-container');
+    
     if (!data[genre]) return;
 
     title.innerText = data[genre].title;
@@ -70,3 +72,4 @@ function changeTrack(genre) {
     vinyl.classList.add('playing');
 
 }
+
