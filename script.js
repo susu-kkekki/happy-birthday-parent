@@ -58,8 +58,15 @@ function changeTrack(genre) {
     label.style.backgroundSize = "cover";
     if (yearText) yearText.style.opacity = "0";
 
+    // THE REVEAL LOGIC
+    playerContainer.style.display = "block"; // Make it part of the page
+    setTimeout(() => {
+        playerContainer.style.opacity = "1"; // Fade it in nicely
+    }, 10);
+
     // Spotify Embed URL 
     player.src = `https://open.spotify.com/embed/track/${data[genre].spotifyID}?utm_source=generator&theme=0`;
 
     vinyl.classList.add('playing');
+
 }
