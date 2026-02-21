@@ -49,14 +49,14 @@ body {
 
 #birthday-msg {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ecf0f1;
-    line-height: 1.6;
+    line-height: 1.4;
     padding: 15px;
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
-    min-height: 120px;
+    min-height: 100px;
 }
 
 /* The Record with Grooves */
@@ -235,4 +235,5 @@ button:hover {
     }
 
 }
+
 
