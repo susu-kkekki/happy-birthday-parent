@@ -1,19 +1,19 @@
 const data = {
     rnb: {
         title: "The '74 Classic Soul",
-        msg: "Born in '74 and raised on the real stuff. You’ve always had that rhythm in your step, Dad. This one is for the early days!",
+        msg: "Born in '74, a year the world got a little brighter. You’ve walked with grace since the beginning, Dad. This is for the soul that started it all!",
         image: "dad-young.jpeg",
         spotifyID: "2s00ea2N7VeF0rdAXrBmeO" // Little Ghetto Boy
     },
     jazz: {
         title: "The Smooth Professional",
-        msg: "Sophisticated, timeless, and always composed. You make 52 look like the new 22. Sit back and enjoy this one, you've earned it.",
+        msg: "Like a well-played jazz standard, your life reflects the mercy and grace of God. Thank you for being our lifeline.",
         image: "dad-cool.jpeg",
         spotifyID: "3PY0uWanYhxkrUHaxniwVM" // When Your Life Was Low
     },
     soul: {
        title: "The Heart of the Family",
-       msg: "The recent years have been the best ones yet. Like Lalah's voice, your influence is one-of-a-kind. Happy 52nd Birthday!",
+       msg: "52 years of favor! Like this song, your life is a complex, beautiful harmony. May God continue to sing His songs of love over you. Happy Birthday!",
        image: "dad-recent.jpeg",
        spotifyID: "2U52Hp8zYnG2kvt2de0M2L" // Something (Snarky Puppy)
     }
@@ -73,3 +73,4 @@ function changeTrack(genre) {
 
     vinyl.classList.add('playing');
 }
+
