@@ -49,8 +49,6 @@ function changeTrack(genre) {
     const label = document.querySelector('.record-label');
     const player = document.getElementById('spotify-player');
     const yearText = document.querySelector('.year');
-
-    const playerContainer = document.getElementById('spotify-container');
     
     if (!data[genre]) return;
 
@@ -61,10 +59,13 @@ function changeTrack(genre) {
     if (yearText) yearText.style.opacity = "0";
 
     // THE REVEAL LOGIC
-    playerContainer.style.display = "block"; // Make it part of the page
-    setTimeout(() => {
-        playerContainer.style.opacity = "1"; // Fade it in nicely
-    }, 10);
+    if (playerContainer) {
+        playerContainer.style.display = "block"; 
+        // Small delay to allow the 'display' to take effect before the fade
+        setTimeout(() => {
+            playerContainer.style.opacity = "1"; 
+        }, 50);
+    }
 
     // Spotify Embed URL 
     player.src = `https://open.spotify.com/embed/track/${data[genre].spotifyID}?utm_source=generator&theme=0`;
@@ -72,4 +73,5 @@ function changeTrack(genre) {
     vinyl.classList.add('playing');
 
 }
+
 
