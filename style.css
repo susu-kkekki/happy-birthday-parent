@@ -48,13 +48,15 @@ body {
 }
 
 #birthday-msg {
-    font-style: italic;
-    color: #bdc3c7; 
-    line-height: 1;
-    margin-top: 15px;
-    padding: 0 10px;
-    min-height: 60px; 
-    transition: all 0.5s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #ecf0f1;
+    line-height: 1.6;
+    padding: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 120px;
 }
 
 /* The Record with Grooves */
@@ -233,3 +235,4 @@ button:hover {
     }
 
 }
+
